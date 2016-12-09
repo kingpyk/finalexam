@@ -128,7 +128,6 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 frame.setVisibility((View.VISIBLE));
-                l1.setVisibility(View.INVISIBLE);
             }
         });
         btn1.setOnClickListener(new View.OnClickListener() {
@@ -186,8 +185,8 @@ public class MainActivity extends AppCompatActivity {
         btn4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                s1.setChecked(false);
-                frame.setVisibility(View.GONE);
+                frame.setVisibility(View.INVISIBLE);
+                l1.setVisibility(View.VISIBLE);
             }
         });
     }
